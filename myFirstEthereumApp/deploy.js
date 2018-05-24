@@ -2,8 +2,8 @@ const WalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const contract = require('./compile');
 const fs = require('fs');
-const mnemonic = fs.readFileSync('../mnemonic.txt', 'utf8');
-const infuraUrl = fs.readFileSync('../infura.txt', 'utf8');
+const mnemonic = fs.readFileSync('../../mnemonic.txt', 'utf8');
+const infuraUrl = fs.readFileSync('../../infura.txt', 'utf8');
 
 let web3 = new Web3();
 let provider;
